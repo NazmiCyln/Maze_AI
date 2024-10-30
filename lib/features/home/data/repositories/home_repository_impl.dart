@@ -8,19 +8,14 @@ import 'package:maze_ai/core/models/failure/failure.dart';
 import 'package:maze_ai/features/home/domain/models/chat_and_image.dart';
 
 import '../../../../constants/constans.dart';
-import '../../../../services/network/network_service.dart';
 import '../../domain/models/chat.dart';
 import '../../domain/repositories/home_repository.dart';
 
 @LazySingleton(as: HomeRepository)
 final class HomeRepositoryImpl implements HomeRepository {
-  final NetworkService networkService;
   final Gemini gemini;
 
-  HomeRepositoryImpl({
-    required this.networkService,
-    required this.gemini,
-  });
+  HomeRepositoryImpl({required this.gemini});
 
   @override
   Future<Either<Failure, String>> sendMessage({required String message}) async {

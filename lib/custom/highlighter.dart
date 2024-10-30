@@ -23,10 +23,6 @@ class Highlight extends MarkdownElementBuilder {
         element.textContent.trim(),
         language: language,
         padding: const EdgeInsets.all(8),
-        // textStyle: ctx.context.textTheme.bodyText1!.copyWith(
-        //   fontSize: 12.sp,
-        //   color: ctx.context.theme.colorScheme.onSurface,
-        // ),
       ),
     );
   }

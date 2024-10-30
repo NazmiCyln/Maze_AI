@@ -50,7 +50,9 @@ mixin _$ValueFailure {
   }) =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ValueFailure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ValueFailureCopyWith<ValueFailure> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -74,6 +76,8 @@ class _$ValueFailureCopyWithImpl<$Res, $Val extends ValueFailure>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ValueFailure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -107,6 +111,8 @@ class __$$InvalidInputImplCopyWithImpl<$Res>
       _$InvalidInputImpl _value, $Res Function(_$InvalidInputImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ValueFailure
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -145,7 +151,9 @@ class _$InvalidInputImpl implements _InvalidInput {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ValueFailure
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$InvalidInputImplCopyWith<_$InvalidInputImpl> get copyWith =>
@@ -213,8 +221,11 @@ abstract class _InvalidInput implements ValueFailure {
 
   @override
   String get message;
+
+  /// Create a copy of ValueFailure
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$InvalidInputImplCopyWith<_$InvalidInputImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

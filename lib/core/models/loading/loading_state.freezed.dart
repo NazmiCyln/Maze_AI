@@ -72,6 +72,9 @@ class _$LoadingStateCopyWithImpl<$Res, $Val extends LoadingState>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of LoadingState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -87,6 +90,9 @@ class __$$ShowImplCopyWithImpl<$Res>
     implements _$$ShowImplCopyWith<$Res> {
   __$$ShowImplCopyWithImpl(_$ShowImpl _value, $Res Function(_$ShowImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of LoadingState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -189,6 +195,9 @@ class __$$HideImplCopyWithImpl<$Res>
     implements _$$HideImplCopyWith<$Res> {
   __$$HideImplCopyWithImpl(_$HideImpl _value, $Res Function(_$HideImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of LoadingState
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc

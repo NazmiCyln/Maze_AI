@@ -53,11 +53,11 @@ class ChatPage extends HookConsumerWidget {
                           return GeminiResponseTypeView(
                             key: ValueKey(index),
                             builder: (context, child, response, loading) {
-                              scrollController.animateTo(
-                                scrollController.position.maxScrollExtent,
-                                duration: const Duration(milliseconds: 300),
-                                curve: Curves.easeOut,
-                              );
+                              // scrollController.animateTo(
+                              //   scrollController.position.maxScrollExtent,
+                              //   duration: const Duration(milliseconds: 300),
+                              //   curve: Curves.easeOut,
+                              // );
 
                               return ChatItem(
                                 chat: Chat(

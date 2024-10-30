@@ -23,7 +23,9 @@ mixin _$ChatAndImageState {
   Option<PickFileData> get pickFileData => throw _privateConstructorUsedError;
   Stream<Candidates> get stream => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ChatAndImageState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ChatAndImageStateCopyWith<ChatAndImageState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -53,6 +55,8 @@ class _$ChatAndImageStateCopyWithImpl<$Res, $Val extends ChatAndImageState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ChatAndImageState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -117,6 +121,8 @@ class __$$ChatAndImageStateImplCopyWithImpl<$Res>
       $Res Function(_$ChatAndImageStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ChatAndImageState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -211,7 +217,9 @@ class _$ChatAndImageStateImpl implements _ChatAndImageState {
   int get hashCode => Object.hash(runtimeType, failure, isLoading, message,
       const DeepCollectionEquality().hash(_messages), pickFileData, stream);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ChatAndImageState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ChatAndImageStateImplCopyWith<_$ChatAndImageStateImpl> get copyWith =>
@@ -240,8 +248,11 @@ abstract class _ChatAndImageState implements ChatAndImageState {
   Option<PickFileData> get pickFileData;
   @override
   Stream<Candidates> get stream;
+
+  /// Create a copy of ChatAndImageState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ChatAndImageStateImplCopyWith<_$ChatAndImageStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

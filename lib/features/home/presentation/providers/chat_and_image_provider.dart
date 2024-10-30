@@ -81,7 +81,7 @@ class ChatAndImageNotifier extends AutoDisposeNotifier<ChatAndImageState> {
               ...state.messages.sublist(0, state.messages.length - 1),
               ChatAndImage(
                 created: DateTime.now(),
-                content: state.messages.last.content + (event.output ?? ""),
+                content: "${state.messages.last.content.trim()} ${"${event.output?.trim()} "}",
                 isFromUser: false,
                 image: null,
               ),

@@ -68,7 +68,7 @@ class ChatNotifier extends AutoDisposeNotifier<ChatState> {
               ...state.messages.sublist(0, state.messages.length - 1),
               Chat(
                 created: DateTime.now(),
-                content: state.messages.last.content + (event.output ?? ""),
+                content: "${state.messages.last.content.trim()} ${"${event.output?.trim()} "}",
                 isFromUser: false,
               ),
             ],

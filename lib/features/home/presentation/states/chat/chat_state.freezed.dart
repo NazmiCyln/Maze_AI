@@ -22,7 +22,9 @@ mixin _$ChatState {
   List<Chat> get messages => throw _privateConstructorUsedError;
   Stream<Candidates> get stream => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ChatState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ChatStateCopyWith<ChatState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -50,6 +52,8 @@ class _$ChatStateCopyWithImpl<$Res, $Val extends ChatState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ChatState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -108,6 +112,8 @@ class __$$ChatStateImplCopyWithImpl<$Res>
       _$ChatStateImpl _value, $Res Function(_$ChatStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ChatState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -192,7 +198,9 @@ class _$ChatStateImpl implements _ChatState {
   int get hashCode => Object.hash(runtimeType, failure, isLoading, message,
       const DeepCollectionEquality().hash(_messages), stream);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ChatState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ChatStateImplCopyWith<_$ChatStateImpl> get copyWith =>
@@ -217,8 +225,11 @@ abstract class _ChatState implements ChatState {
   List<Chat> get messages;
   @override
   Stream<Candidates> get stream;
+
+  /// Create a copy of ChatState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ChatStateImplCopyWith<_$ChatStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
