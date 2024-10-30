@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-const appName = "Maze VPN";
+const appName = "Maze AI";
 const languagePath = "assets/lang";
 
 const applicationPdf = "application/pdf";

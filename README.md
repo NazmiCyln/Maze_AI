@@ -1,16 +1,5 @@
-# maze_ai
+# Maze AI
 
-A new Flutter project.
+## AI Chatbot with Gemini API
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This Flutter-based AI chatbot leverages the power of the Gemini API to deliver intelligent and responsive conversations. The app is designed for seamless user interaction, providing quick and accurate answers to user queries.
